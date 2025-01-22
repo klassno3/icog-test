@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root
+{
+  --font-barlow-sans: "Barlow", sans-serif;
+}
+
+body,
+.modal-container
+{
+  font-family: var(--font-barlow-sans);
+}
+
+table,
+th,
+td
+{
+  border-bottom: 1px solid #54535352;
+  border-collapse: collapse;
+}
+
+
+/* width */
+.table-scrollbar::-webkit-scrollbar
+{
+  height: 8px;
+  width: 8px;
+}
+
+/* Track */
+.table-scrollbar::-webkit-scrollbar-track
+{
+  background: #efefef;
+}
+
+/* Handle */
+.table-scrollbar::-webkit-scrollbar-thumb
+{
+  background: #B631EE;
+  border-radius: 5px;
+  width: 10%;
+}
+
+/* Handle on hover */
+.table-scrollbar::-webkit-scrollbar-thumb:hover
+{
+  background: #B631EE;
+}

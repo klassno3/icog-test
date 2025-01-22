@@ -1,0 +1,53 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+model users {
+  id        Int      @id @default(autoincrement())
+  name      String?
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  leases    lease[]
+   sharedLease sharedLease[]
+}
+
+model lease {
+  id        Int      @id @default(autoincrement())
+  startDate DateTime
+  endDate   DateTime
+  monthRent Float
+  securityDeposit Float
+  annualIncreasePercentage Float
+  maintenanceFees Float? 
+  utilities String
+  latePaymentPenalty Float? 
+  additionalCharges Float? 
+  leaseType String
+  totalRent Float
+  totalCost Float
+  totalMaintenance Float
+  annualIncrease Float
+  userEmail String   
+  user      users     @relation(fields: [userEmail], references: [email]) // Connecting to User by email
+  createdAt DateTime @default(now())
+  sharedLease              sharedLease[]
+}
+
+model sharedLease {
+  id          Int   @id @default(autoincrement())
+  leaseId     Int
+  receiverEmail String 
+  sharedByEmail  String
+  sharedAt    DateTime @default(now())
+
+  lease       lease    @relation(fields: [leaseId], references: [id])
+  sharedBy    users     @relation(fields: [sharedByEmail], references: [email])
+
+  @@index([leaseId])
+  @@index([sharedByEmail])
+}
