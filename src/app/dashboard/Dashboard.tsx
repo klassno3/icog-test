@@ -65,7 +65,7 @@ export default function Dashboard() {
       </div>
     );
   }
-  console.log(leases);
+
   if (isError) return <Error />;
   function formatDateForTable(dateString: Date) {
     const date = new Date(dateString);

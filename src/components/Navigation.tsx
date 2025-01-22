@@ -7,7 +7,6 @@ import { useSession } from "next-auth/react";
 import NavDropDown from "./NavDropdown";
 const Navigation = () => {
   const { data: session } = useSession();
-  console.log(session);
   return (
     <nav className="bg- flex justify-between items-center font-poppins py-2.5 md:py-3.5 w-11/12 mx-auto text-black/70 ">
       <Link href="/">

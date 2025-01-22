@@ -69,9 +69,7 @@ export async function saveLeaseInformation(leaseData: leaseType) {
     return lease;
   } catch (error) {
     if (error instanceof Error) {
-      console.log("Error:", error.message);
-    } else {
-      console.log("Unknown error:", error);
+      logError(error);
     }
     throw new Error("Error saving lease information");
   }
@@ -80,6 +78,10 @@ export async function saveLeaseInformation(leaseData: leaseType) {
 export async function deleteLeaseById(leaseId: number) {
   const session = await getServerSession();
   try {
+    await prisma.sharedLease.deleteMany({
+      where: { leaseId },
+    });
+
     // Find the lease and check if it belongs to the logged-in user
     const lease = await prisma.lease.findUnique({
       where: { id: leaseId },
