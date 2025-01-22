@@ -8,7 +8,7 @@ import NavDropDown from "./NavDropdown";
 const Navigation = () => {
   const { data: session } = useSession();
   return (
-    <nav className="bg- flex justify-between items-center font-poppins py-2.5 md:py-3.5 w-11/12 mx-auto text-black/70 ">
+    <nav className="max-w-[1440px] flex justify-between items-center font-poppins py-2.5 md:py-3.5 w-11/12 mx-auto text-black/70 ">
       <Link href="/">
         <Image src={Logo} alt="Logo" className="w-24 md:w-40" />
       </Link>

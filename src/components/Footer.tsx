@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="w-full text-sm md:text-sm font-light bg-black py-3 md:py-5  text-white font-barlow">
       {" "}
-      <div className="w-11/12 mx-auto">
+      <div className="max-w-[1440px] w-11/12 mx-auto">
         <Link href="/">
           <Image src={Logo} alt="Logo" className="w-24 md:w-32" />
         </Link>

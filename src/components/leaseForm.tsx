@@ -130,7 +130,7 @@ export default function LeaseForm() {
     }
   }, [watchFields]);
   return (
-    <div className="pb-20 -translate-y-10 flex  flex-col lg:flex-row font-barlow justify-between items-start gap-20 lg:gap-14">
+    <div className="max-w-[1440px] mx-auto pb-20 -translate-y-10 flex  flex-col lg:flex-row font-barlow justify-between items-start gap-20 lg:gap-14">
       <div className="w-full relative lg:w-[65%] flex flex-col gap-10  p-6 rounded-lg shadow-xl bg-white ">
         {status === "pending" && (
           <div className=" absolute top-0 left-0 rounded-lg bg-white/90 z-[100] w-full h-full">

@@ -31,7 +31,7 @@ const Page = () => {
   }
 
   return (
-    <div className="w-11/12 mx-auto min-h-screen">
+    <div className="max-w-[1440px] w-11/12 mx-auto min-h-screen">
       <Dashboard />
     </div>
   );

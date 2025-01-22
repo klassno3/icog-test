@@ -74,7 +74,7 @@ const Page = () => {
     }
   };
   return (
-    <div className="font-barlow  relative w-11/12 md:w-1/2 lg:w-1/3 mx-auto py-10 md:py-16">
+    <div className="font-barlow max-w-[600px] relative w-11/12 md:w-1/2 lg:w-1/3 mx-auto py-10 md:py-16">
       {loading && (
         <div className=" absolute bg-white/80 z-[100] w-full h-[85%]">
           <Loading />

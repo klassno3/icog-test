@@ -33,7 +33,7 @@ const SharedLease = () => {
     });
   }
   return (
-    <div className="py-10 min-h-screen md:py-20 flex flex-col gap-7 md:gap-10 text-black font-barlow">
+    <div className="py-10 max-w-[1440px] mx-auto min-h-screen md:py-20 flex flex-col gap-7 md:gap-10 text-black font-barlow">
       <div className="flex justify-between items-center">
         <h1 className="text-lg md:text-xl font-bold">Shared Leases</h1>
       </div>
