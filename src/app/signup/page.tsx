@@ -117,7 +117,7 @@ const Page = () => {
               name="password"
             />
 
-            <div className="flex flex-col md:flex-row  justify-center gap-1">
+            <div className="flex flex-col md:flex-row items-center  justify-center gap-1">
               <p className="">If you already have an account </p>
               <Link href="/login" className="text-blue-600">
                 Log in
