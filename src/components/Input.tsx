@@ -49,12 +49,12 @@ const Input = ({
       ) : null}
       <div
         className={`text-primaryColor-200 flex items-center justify-between w-full rounded-sm focus:outline-none focus:ring-0  px-4 md:px-5 py-2
-           placeholder:font-light placeholder:font-barlow${
+           placeholder:font-light placeholder:font-barlow ${
              error
                ? "border-red-400/60 border-[.5px] "
                : disabled
-               ? "border-gray-300/60 border-[.5px] "
-               : "border-[.5px]  border-primaryColor-400/70 hover:border-primaryColor-400/80 transition-all duration-500"
+               ? "border-gray-300/70 border-[.5px] "
+               : "border-[.5px]  border-primaryColor-400/70 hover:border-gray-400/55 transition-all duration-500"
            }`}
       >
         <input
