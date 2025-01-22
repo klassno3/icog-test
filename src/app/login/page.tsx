@@ -100,7 +100,7 @@ const Page = () => {
               required={true}
               name="password"
             />
-            <div className="flex justify-center gap-1">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-1">
               <p className="">If you don&apos;t have an account</p>
               <Link href="/signup" className="text-blue-600">
                 Create Account
