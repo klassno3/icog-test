@@ -4,7 +4,6 @@ import prisma from "@/lib/prisma";
 
 export async function GET() {
   const session = await getServerSession();
-  console.log(session?.user?.email);
   if (!session?.user?.email) {
     return NextResponse.json(
       { error: "Unauthorized: No email found in session" },
@@ -36,7 +35,6 @@ export async function GET() {
         annualIncrease: true,
       },
     });
-    console.log(leases);
     return NextResponse.json(leases, { status: 200 });
   } catch (error) {
     console.error("Error fetching leases:", error);
