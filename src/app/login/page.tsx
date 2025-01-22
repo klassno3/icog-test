@@ -69,9 +69,9 @@ const Page = () => {
   };
 
   return (
-    <div className="font-barlow max-w-[600px] w-11/12 md:w-1/2 lg:w-1/3 mx-auto  py-10 md:py-16">
+    <div className="font-barlow relative overflow-hidden max-w-[600px] w-11/12 md:w-1/2 lg:w-1/3 mx-auto  py-10 md:py-16">
       {loading && (
-        <div className=" absolute bg-white/80 z-[100] w-full md:w-1/2 lg:w-1/3 mx-auto w- h-[70%] overflow-hidden">
+        <div className="absolute bg-red-800/80 z-50 w-full md:w-1/3 mx-auto h-[80%] overflow-hidden">
           <Loading />
         </div>
       )}

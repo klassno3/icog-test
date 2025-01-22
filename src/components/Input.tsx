@@ -49,7 +49,7 @@ const Input = ({
       ) : null}
       <div
         className={`text-primaryColor-200 flex items-center justify-between w-full rounded-sm focus:outline-none focus:ring-0  px-4 md:px-5 py-2
-           placeholder:font-light placeholder:font-barlow bg-secondaryColor-100 ${
+           placeholder:font-light placeholder:font-barlow${
              error
                ? "border-red-400/60 border-[.5px] "
                : disabled
@@ -79,7 +79,7 @@ const Input = ({
           id={name}
           onBlur={onBlur}
           placeholder={placeHolder}
-          className={`focus:outline-none  focus:ring-0 bg-secondaryColor-100 placeholder:font-light placeholder:text-sm w-full ${
+          className={`focus:outline-none  focus:ring-0 bg-transparent placeholder:font-light placeholder:text-sm w-full ${
             disabled && "text-gray-400"
           }`}
         />

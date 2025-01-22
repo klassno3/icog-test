@@ -68,10 +68,12 @@ const ShareForm = ({ lease }: ModalParentProps) => {
   };
   return (
     <div className="p-4 md:p-12 flex flex-col gap-4  text-black">
-      <h3 className="text-2xl font-barlow font-semibold">Share Lease</h3>
+      <h3 className="text-lg md:text-2xl font-barlow font-semibold">
+        Share Lease
+      </h3>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col gap-4 w-1/2"
+        className="flex flex-col gap-4 md:w-1/2"
       >
         <Input
           type="email"

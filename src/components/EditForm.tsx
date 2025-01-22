@@ -175,7 +175,9 @@ const EditForm = ({ lease }: ModalParentProps) => {
       onSubmit={handleSubmit(onSubmit)}
       className="p-4 md:p-12 flex flex-col gap-5 font-barlow"
     >
-      <h3 className="text-2xl font-barlow font-semibold">Edit Lease</h3>
+      <h3 className="text-lg md:text-2xl font-barlow font-semibold">
+        Edit Lease
+      </h3>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 ">
         <Input
           type="date"

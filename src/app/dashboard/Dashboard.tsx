@@ -128,7 +128,7 @@ export default function Dashboard() {
                   <td>${lease.totalCost}</td>
                   <td>${lease.annualIncrease.toFixed(2)}</td>
                   <td className=" text-black">
-                    <div className="flex gap-4">
+                    <div className="flex gap-4 text-sm">
                       <ModalParent lease={lease} type="edit" />
                       <FaTrashAlt
                         onClick={() => handleDelete(lease.id)}

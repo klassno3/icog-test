@@ -4,7 +4,7 @@ import Logo from "../../public/footer logo.svg";
 import Image from "next/image";
 const Footer = () => {
   return (
-    <footer className="w-full text-sm md:text-sm font-light bg-black py-3 md:py-5  text-white font-barlow">
+    <footer className="w-full z-[200] text-sm md:text-sm font-light bg-black py-4 md:py-5  text-white font-barlow">
       {" "}
       <div className="max-w-[1440px] w-11/12 mx-auto">
         <Link href="/">
